@@ -12,10 +12,12 @@ https://github.com/EthanThatOneKid/acmcsuf.com
 
 ## Credits ##
 acmCSUF
+
 acmCreate
 - Jacob Nguyen
 - Lisa Hong
 - Mike Ploythai
 - Mathias Nguyen
+
 Ethan Davidson
 
