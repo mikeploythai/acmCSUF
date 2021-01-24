@@ -67,7 +67,7 @@ ion-icon {
 }
 
 /* Responsive - Global */
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 1170px) {
     .menu {
         display: flex;
         align-items: center;
