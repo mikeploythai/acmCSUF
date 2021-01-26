@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width initial-size=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>acmCSUF</title>
+
+        <!-- Styles -->
         <link rel="stylesheet" href="styles.css">
 
         <!-- Favicons -->
@@ -14,37 +16,36 @@
         <link rel="manifest" href="Assets/Favicons/site.webmanifest">
 
         <!-- Google Fonts -->
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap">
     </head>
 
     <body>
-        <header>
-            <!-- Nav Bar -->
-            <div class="navBar">
-                <!-- Logo -->
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="Assets/acmCSUF Badge.svg" height="48" class="badge">
-                        <span class="logoText">CSUF</span>
-                    </a>
-                </div>
+        <!-- Nav Bar -->
+        <nav>
+            <!-- Menu Toggle -->
+            <input type="checkbox" id="navToggle">
 
-                <!-- Buttons -->
-                <div class="buttons">
-                    <ul>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="events.html">events</a></li>
-                        <li><a href="paths.html">paths</a></li>
-                        <li><a href="nodebuds.html">node buds</a></li>
-                        <li><a href="connect.html">connect</a></li>
-                    </ul>
-                </div>
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="Assets/acmCSUF Badge.svg" width="48" class="logoBadge">
+                <span class="logoText">CSUF</span>
+            </a>
 
-                <ion-icon size="large" name="menu-outline" class="menu"></ion-icon>
-            </div>
-        </header>
-
-        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+            <!-- Pages -->
+            <ul class="pages">
+                <li><a href="#">about</a></li>
+                <li><a href="#">events</a></li>
+                <li><a href="#">paths</a></li>
+                <li><a href="#">node buds</a></li>
+                <li><a href="#">connect</a></li>
+            </ul>
+            
+            <!-- Menu -->
+            <label for="navToggle" class="menu">
+                <div class="menuLine"></div>
+                <div class="menuLine"></div>
+                <div class="menuLine"></div>
+            </label>
+        </nav>
     </body>
 </html>
