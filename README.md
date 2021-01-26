@@ -18,5 +18,5 @@ acmCreate
 
 Ethan Davidson
 
-Coding Nepal for Responsive Hamburger Menu Tutorial (https://youtu.be/oLgtucwjVII)
+CodingNepal for Responsive Hamburger Menu Tutorial (https://youtu.be/oLgtucwjVII)
 
