@@ -12,11 +12,11 @@
 
 /* Nav Bar - Global */
 nav {
-	position: fixed;
-	z-index: 3;
-	width: 100%;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
 	
-	height: 112px;
+    height: 112px;
     background-color: #FFFFFF;
     box-shadow: 0 3px 6px rgba(33, 33, 33, .1);
 }
@@ -25,7 +25,7 @@ nav {
 nav .logo {
     float: left;
     display: flex;
-	align-items: center;
+    align-items: center;
     margin-left: 128px;
     height: 100%;
 }
@@ -41,11 +41,11 @@ nav .logo .logoText {
 
 /* Nav Bar - Pages */
 nav .pages {
-	float: right;
+    float: right;
     display: flex;
     align-items: center;
-	margin-right: 128px;
-	height: 100%;
+    margin-right: 128px;
+    height: 100%;
 }
 
 nav .pages a {
@@ -61,22 +61,22 @@ nav .pages a:hover, nav .pages a #active { color: rgb(55, 146, 193);}
 #navToggle { display: none; }
 
 nav .menu {
-	display: none;
-	position: absolute;
-	right: 64px;
-	top: 50%;
+    display: none;
+    position: absolute;
+    right: 64px;
+    top: 50%;
     transform: translateY(-50%);
 
     cursor: pointer;
 }
 
 nav .menu .menuLine {
-	width: 30px;
-	height: 2px;
-	margin: 6px;
+    width: 30px;
+    height: 2px;
+    margin: 6px;
     border-radius: 3px;
     background-color: #212121;
-	transition: all .25s ease;
+    transition: all .25s ease;
 }
 
 /* Responsive */
@@ -97,17 +97,17 @@ nav .menu .menuLine {
     
     /* Nav Bar - Pages */
 	nav .pages {
-		position: fixed;
-		z-index: 2;
-		top: 82px;
-		bottom: 100%;
-		width: 100vw;
-		height: auto;
-		flex-direction: column;
-		justify-content: space-evenly;
+	    position: fixed;
+	    z-index: 2;
+	    top: 82px;
+	    bottom: 100%;
+	    width: 100vw;
+	    height: auto;
+	    flex-direction: column;
+	    justify-content: space-evenly;
         overflow: hidden;
         background-color: rgba(255, 255, 255, 0.75);
-		transition: all .25s ease;
+	    transition: all .25s ease;
     }
     
 	nav .pages a {
@@ -124,11 +124,11 @@ nav .menu .menuLine {
     nav :checked ~ .pages { bottom: 0; }
     
     /* Nav Bar - Menu Button Animation */
-	nav :checked ~ .menu .menuLine:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    nav :checked ~ .menu .menuLine:nth-child(1) { transform: translateY(8px) rotate(45deg); }
     
     nav :checked ~ .menu .menuLine:nth-child(2) { opacity: 0; }
     
-	nav :checked ~ .menu .menuLine:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    nav :checked ~ .menu .menuLine:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 	
 }
 
