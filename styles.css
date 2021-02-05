@@ -3,6 +3,7 @@
 	padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 
     font-family: 'Poppins', sans-serif;
     color: #212121;
@@ -10,7 +11,33 @@
     text-decoration: none;
 }
 
-/* Nav Bar - Global */
+/* acmCSUF Badge */
+.logoBadge { filter: drop-shadow(0 2px 3px rgba(55, 146, 193, .5)); }
+
+/* CSUF Text */
+.csuf {
+    font-weight: 700;
+
+    color: #3792C1;
+}
+
+/* ACM Texts */
+.acm { font-weight: 600; }
+
+/* Titles */
+.title {
+    font-weight: 600;
+    font-size: 64px;
+}
+
+/* Descriptions */
+.description {
+    margin-top: 32px;
+
+    font-size: 32px;
+}
+
+/* Nav Bar */
 nav {
     position: fixed;
     z-index: 3;
@@ -21,7 +48,7 @@ nav {
     box-shadow: 0 3px 6px rgba(33, 33, 33, .1);
 }
 
-/* Nav Bar - Logo */
+/* Logo */
 nav .logo {
     float: left;
     display: flex;
@@ -30,8 +57,6 @@ nav .logo {
     height: 100%;
 }
 
-nav .logo .logoBadge { filter: drop-shadow(0 2px 3px rgba(55, 146, 193, .5)); }
-
 nav .logo .logoText {
     padding-left: 12px;
 
@@ -39,25 +64,31 @@ nav .logo .logoText {
     font-weight: 700;
 }
 
-/* Nav Bar - Pages */
+/* Pages */
 nav .pages {
     float: right;
     display: flex;
     align-items: center;
     margin-right: 128px;
     height: 100%;
+
+    font-weight: 600;
 }
 
 nav .pages a {
     margin-left: 64px;
     font-size: 24px;
-
-    transition: all .25s ease;
 }
 
-nav .pages a:hover, nav .pages a #active { color: rgb(55, 146, 193);}
+nav .pages #active { color: #3792C1; }
 
-/* Nav Bar - Menu */
+nav .pages #activeBuds {
+    font-weight: 700;
+
+    color: #C40042;
+}
+
+/* Menu */
 #navToggle { display: none; }
 
 nav .menu {
@@ -77,6 +108,85 @@ nav .menu .menuLine {
     border-radius: 3px;
     background-color: #212121;
     transition: all .25s ease;
+}
+
+/* Home */
+
+/* Section 1 */
+.sectionOne { float: left; }
+
+/* Tagline */
+.sectionOne .tagline {
+    margin-top: 333px;
+    margin-left: 128px;
+
+    font-weight: 600;
+    font-size: 86px;
+}
+
+/* Section 2 */
+.sectionTwo {
+    margin-top: 1249px;
+    width: 100vw;
+
+    text-align: center;
+}
+
+/* Section 3 */
+.sectionThree {
+    margin-top: 430px;
+    width: 100vw;
+
+    text-align: center;
+}
+
+/* Section 4 */
+.sectionFour {
+    margin-top: 733px;
+    width: 100vw;
+
+    text-align: center;
+}
+
+.sectionFour .flex { font-weight: 600;}
+
+.sectionFour .plus {
+    font-weight: 700;
+
+    color: #3792C1;
+}
+
+/* Footer */
+footer {
+    margin-top: 340px;
+    width: 100%;
+	
+    height: 112px;
+    background-color: #212121;
+}
+
+footer .footerStuff {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p, footer .footerText {
+    font-size: 24px;
+
+    color: #FFFFFF;
+}
+
+footer p {
+    padding-right: 12px;
+
+    font-weight: 600;
+}
+
+footer .footerText {
+    padding-left: 12px;
+    font-weight: 700;
 }
 
 /* Responsive */
@@ -106,7 +216,8 @@ nav .menu .menuLine {
 	    flex-direction: column;
 	    justify-content: space-evenly;
         overflow: hidden;
-        background-color: rgba(255, 255, 255, 0.75);
+
+        background-color: rgb(255, 255, 255);
 	    transition: all .25s ease;
     }
     
@@ -129,7 +240,6 @@ nav .menu .menuLine {
     nav :checked ~ .menu .menuLine:nth-child(2) { opacity: 0; }
     
     nav :checked ~ .menu .menuLine:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
-	
 }
 
 @media screen and (max-width: 800px) {
